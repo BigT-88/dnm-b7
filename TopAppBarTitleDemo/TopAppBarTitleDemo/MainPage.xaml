@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TopAppBarTitleDemo.MainPage"
+             Style="{StaticResource TopAppBar}">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Label
+                FontSize="16"
+                Text="The text in the Top App Bar on Android is allowed to auto scale and .NET MAUI does not provide a way for it NOT to auto scale."
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1" />
+            <Label
+                FontSize="16"
+                Text="This text is allowed to auto scale."
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1" />
+
+            <Label
+                FontSize="16"
+                FontAutoScalingEnabled="False"
+                Text="This text is NOT allowed to auto scale."
+                Style="{StaticResource Headline}" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
